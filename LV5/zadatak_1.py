@@ -15,8 +15,8 @@ X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_
 
 
 #a)---------------------------------------------------------------------------------------------------------
-plt.scatter(X_train[:,0],X_train[:,1], c="Blue",label='Train')
-plt.scatter(X_test[:,0],X_test[:,1], marker="x",c="Red",label='Test')
+plt.scatter(X_train[:,0],X_train[:,1], c=y_train,label='Train')
+plt.scatter(X_test[:,0],X_test[:,1], marker="x",c=y_test,label='Test')
 plt.legend()
 plt.xlabel('x1')
 plt.ylabel('x2')
